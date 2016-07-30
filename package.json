@@ -1,0 +1,35 @@
+{
+  "name": "musie",
+  "version": "1.0.0",
+  "description": "A super-simple javascript music framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimothyTim/musie.js.git"
+  },
+  "keywords": [
+    "music",
+    "theory",
+    "chords",
+    "scales",
+    "note",
+    "cadence"
+  ],
+  "author": "timothyt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimothyTim/musie.js/issues"
+  },
+  "homepage": "https://github.com/TimothyTim/musie.js#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.2.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.14.1"
+  }
+}
