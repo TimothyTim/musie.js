@@ -33,7 +33,7 @@ Music.prototype.noteNameToFrequency = function(name) {
 };
 
 Music.prototype.noteNumberToFrequency = function(note) {
-    return 440.0 * Math.pow(2, (note - 69.0) / 12.0);
+    return parseFloat((440.0 * Math.pow(2, (note - 69.0) / 12.0)).toFixed(2));
 };
 
 Music.prototype.noteNumberToName = function(note) {

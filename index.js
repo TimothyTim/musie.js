@@ -17,7 +17,7 @@ function extractNote(noteName) {
 
     return {
         name: noteName.replace(regEx, ''),
-        octave: regEx.exec(noteName)[0],
+        octave: parseInt(regEx.exec(noteName)[0]),
         fullName: noteName
     };
 }
@@ -29,10 +29,9 @@ function calculateScaleByIntervals(noteName, scaleByIntervals) {
   scale.push(fullNote);
 
   scaleByIntervals.forEach(function(interval) {
-    var noteCopy = _.clone(newNote);
-    var note = extractNote(noteCopy);
-    newNote = intvl.getNote(note, interval);
-    scale.push(getNote(newNote.fullName));
+    var nextFullNote = extractNote(_.clone(newNote));
+    newNote = intvl.getNote(nextFullNote, interval);
+    scale.push(getNote(newNote));
   });
 
   return scale;
