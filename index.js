@@ -22,16 +22,49 @@ function extractNote(noteName) {
     };
 }
 
+function getInterval(intervalName) {
+    switch (intervalName) {
+        case 'm2':
+            return 1;
+        case '2':
+            return 2;
+        case 'm3':
+            return 3;
+        case '3':
+            return 4;
+        case '4':
+            return 5;
+        case 'aug4':
+        case 'dim5':
+            return 6;
+        case '5':
+            return 7;
+        case 'aug5':
+        case 'm6':
+            return 8;
+        case '6':
+            return 9;
+        case 'm7':
+        case '7':
+            return 10;
+        case 'M7':
+            return 11;
+        default:
+            return 0;
+    }
+}
+
 function calculateScaleByIntervals(noteName, scaleByIntervals) {
   var scale = [];
-  var newNote = _.clone(noteName);
-  var fullNote = getNote(newNote);
-  scale.push(fullNote);
+  var rootNote = _.clone(noteName);
+  var fullRootNote = getNote(rootNote);
+  scale.push(fullRootNote);
 
-  scaleByIntervals.forEach(function(interval) {
-    var nextFullNote = extractNote(_.clone(newNote));
-    newNote = intvl.getNote(nextFullNote, interval);
-    scale.push(getNote(newNote));
+  scaleByIntervals.forEach(function(intervalByName) {
+    var intervalByStepVal = getInterval(intervalByName);
+    var nextFullNote = extractNote(_.clone(rootNote));
+    nextFullNote = intvl.getNote(nextFullNote, intervalByStepVal);
+    scale.push(getNote(nextFullNote));
   });
 
   return scale;
