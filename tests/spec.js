@@ -34,7 +34,7 @@ describe('Musie', function() {
     });
 
     it('should return the specified scale relating to the root note provided', function() {
-        var noteData = index.get('A3', 'diatonic');
+        var noteData = index.get('A3', 'major');
 
         assert.deepEqual(noteData, [{
                 name: 'A3',
