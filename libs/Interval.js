@@ -34,7 +34,7 @@ function getNextNote(note, interval) {
 }
 
 module.exports = {
-    getNote: (note, interval) => {
+    getNote: function(note, interval) {
         if (!note.octave) note.octave = 3;
         interval = filterInterval(interval);
 
