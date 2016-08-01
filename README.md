@@ -18,14 +18,14 @@ musie.get('A4');
 Returns A4:
 [{
     name: A4,
-    number: 57,
-    frequency: 220.00
+    number: 69,
+    frequency: 440
 }]
 */
 
 musie.get('A3', 'major');
 /*
-Returns major scale starting from A4:
+Returns major scale starting from A3:
 [
     {
         name: A3,
