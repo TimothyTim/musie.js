@@ -1,7 +1,7 @@
 {
   "name": "musie",
-  "version": "1.0.5",
-  "description": "A super-simple javascript music framework",
+  "version": "1.0.7",
+  "description": "A super-simple javascript music utility",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./tests"

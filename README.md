@@ -1,6 +1,6 @@
 # musie.js [![build status](https://travis-ci.org/TimothyTim/musie.js.svg)](https://travis-ci.org/TimothyTim/musie.js)
 
-A super-simple javascript utility. By referencing a note name and (optionally) a scale or chord, this library will return one or a series of note objects.
+A super-simple javascript music utility. By referencing a note name and (optionally) a scale or chord, this library will return one or a series of note objects.
 
 <img src="https://s3-eu-west-1.amazonaws.com/musie/musie.png" style="width: 150px;"/>
 
