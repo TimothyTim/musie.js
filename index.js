@@ -1,8 +1,8 @@
 var _ = require('lodash');
+var Music = require('music-helper');
 
 var intvl = require('./libs/Interval.js');
 var sequences = require('./constants/sequences.js');
-var Music = require('./libs/MusicUtil.js');
 
 function getNote(noteName) {
     return {

@@ -1,6 +1,6 @@
 {
   "name": "musie",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A super-simple javascript music utility",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
     "mocha": "^2.5.3"
   },
   "dependencies": {
-    "lodash": "^4.14.1"
+    "lodash": "^4.14.1",
+    "music-helper": "^1.0.0"
   }
 }
